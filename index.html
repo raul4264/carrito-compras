@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(175, 174, 174);
+        margin: 9px;
+      }
+   
+
+      p {
+        color: rgb(43, 43, 42);
+      }
+      h2 {
+        color: antiquewhite;
+      }
+      aside {
+        background-color: rgb(84, 97, 97);
+      }
+      div {
+        padding: 5px;
+        background-color: rgb(216, 218, 218);
+        border-radius: 10px;
+       
+      }
+      nav {
+        height: 30px;
+      }
+
+      img {
+        border-radius: 15px;
+      }
+      
+footer{
+    margin-top: 35px;
+    background-color: black;
+    color: antiquewhite;
+    text-align: center;
+}
+h6{ color: antiquewhite;}
+span{ color: antiquewhite;}
+    </style>
+  </head>
+  <body>
+    <nav></nav>
+    <div class="container">
+      <div class="row">
+        <!-- Elementos generados a partir del JSON -->
+        <main id="items" class="col-sm-8 row"></main>
+        <!-- Carrito -->
+        <aside class="col-sm-4">
+          <h2>Carrito de Compras Mercado</h2>
+          <!-- Elementos del carrito -->
+          <ul id="carrito" class="list-group"></ul>
+          <hr />
+          <!-- Precio total -->
+          <p class="text-right"><h6> Total: </h6>
+            <span id="total"></span> - <span>$</span> ;
+          </p>
+          <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+        </aside>
+      </div>
+    </div>
+    <footer>Diseño by Carolina Acuña.<span> - </span>  Copyright 2023.</footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
